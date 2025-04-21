@@ -85,3 +85,9 @@ npm start
     ...
   ]
 
+## Demo SS
+
+<img width="970" alt="Screenshot 2025-04-22 at 4 19 35 AM" src="https://github.com/user-attachments/assets/479de1c3-6b56-461c-9652-da82b7f36d67" />
+<img width="1490" alt="Screenshot 2025-04-22 at 4 19 17 AM" src="https://github.com/user-attachments/assets/05a8f5bb-b844-4d98-ad1e-9e4aa66f2648" />
+
+
