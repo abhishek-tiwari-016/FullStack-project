@@ -4,7 +4,7 @@ import { Recipe } from "./types";
 import { loadData } from "./dataBase/loadData";
 
 const app = express();
-const port = 3004;
+const port = 3001;
 
 app.use(express.json());
 

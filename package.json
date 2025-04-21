@@ -6,6 +6,23 @@
     "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "@types/express": "^5.0.1"
-  }
+    "@types/express": "^5.0.1",
+    "concurrently": "^9.1.2"
+  },
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "This is a full-stack web application for searching and viewing recipes.   Built with:",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npx ts-node server.ts\" \"npm --prefix recipe-ui start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:abhishek-tiwari-016/FullStack-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }

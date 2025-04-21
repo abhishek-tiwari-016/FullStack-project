@@ -44,8 +44,6 @@ export async function loadData(): Promise<void> {
       `;
 
         const insert = db.prepare(insertQuery);
-
-        console.log("CHECK THIS: ", data.recipes);
         data.recipes.forEach((recipe: Recipe) => {
           insert.run(
             recipe.id,
