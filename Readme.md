@@ -20,7 +20,7 @@ Built with:
 ## Folder Structure
 
 - FullStack-project/
-- ├── dataBade/         # Node.js + SQLite backend
+- ├── dataBase/         # Node.js + SQLite backend
 -     ├── db            # initialise inmemory sqlite db
 -     ├── loadData      # loading data from external URL to db
 - ├── recipe-ui/        # React frontend running on 3000 port
