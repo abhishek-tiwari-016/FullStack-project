@@ -69,8 +69,8 @@ npm start
         "name": "Classic Margherita Pizza",
         "ingredients": "[\"Pizza dough\",\"Tomato sauce\",\"Fresh mozzarella cheese\",\"Fresh basil leaves\",\"Olive oil\",\"Salt and pepper to taste\"]",
         "instructions": "[\"Preheat the oven to 475°F (245°C).\",\"Roll out the pizza dough and spread tomato sauce evenly.\",\"Top with slices of fresh mozzarella and fresh basil leaves.\",\"Drizzle with olive oil and season with salt and pepper.\",\"Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.\",\"Slice and serve hot.\"]",
-        "prepTimeMinutes": null,
-        "cookTimeMinutes": null,
+        "prepTimeMinutes": 20,
+        "cookTimeMinutes": 5,
         "servings": 4,
         "difficulty": "Easy",
         "cuisine": "Italian",
@@ -87,7 +87,8 @@ npm start
 
 ## Demo SS
 
-<img width="970" alt="Screenshot 2025-04-22 at 4 19 35 AM" src="https://github.com/user-attachments/assets/479de1c3-6b56-461c-9652-da82b7f36d67" />
-<img width="1490" alt="Screenshot 2025-04-22 at 4 19 17 AM" src="https://github.com/user-attachments/assets/05a8f5bb-b844-4d98-ad1e-9e4aa66f2648" />
+<img width="1230" alt="Screenshot 2025-04-22 at 5 48 29 PM" src="https://github.com/user-attachments/assets/2e4f1b54-c131-4d88-b5f9-82127f513a64" />
+<img width="1228" alt="Screenshot 2025-04-22 at 5 48 14 PM" src="https://github.com/user-attachments/assets/f2306c65-3601-4b50-b7e8-319558f80e3e" />
+
 
 
