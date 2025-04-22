@@ -1,13 +1,13 @@
 import axios from "axios";
 import { db } from "./db";
-import { Recipe } from "../types";
+import { Recipe, Recipes } from "../types";
 
 // Replace this with your actual data URL
 const DATA_URL = "https://dummyjson.com/recipes";
 
 export async function loadData(): Promise<void> {
   try {
-    const { data } = await axios.get(DATA_URL);
+    const { data } = await axios.get<Recipes>(DATA_URL);
 
     await new Promise<void>((resolve, reject) => {
       const createTableQuery = `
@@ -16,8 +16,8 @@ export async function loadData(): Promise<void> {
         name TEXT,
         ingredients TEXT,
         instructions TEXT,
-        preptimeMinutes INTEGER,
-        cooktimeMinutes INTEGER,
+        prepTimeMinutes INTEGER,
+        cookTimeMinutes INTEGER,
         servings INTEGER,
         difficulty TEXT,
         cuisine TEXT,
@@ -37,21 +37,21 @@ export async function loadData(): Promise<void> {
         const insertQuery = `
         INSERT OR REPLACE INTO recipes (
           id, name, ingredients, instructions,
-          preptimeMinutes, cooktimeMinutes, servings,
+          prepTimeMinutes, cookTimeMinutes, servings,
           difficulty, cuisine, caloriesPerServing,
           tags, userId, image, rating, reviewCount, mealType
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
-        const insert = db.prepare(insertQuery);
-        data.recipes.forEach((recipe: Recipe) => {
+      const insert = db.prepare(insertQuery);
+      data.recipes.forEach((recipe: Recipe) => {
           insert.run(
             recipe.id,
             recipe.name,
             JSON.stringify(recipe.ingredients),
             JSON.stringify(recipe.instructions),
-            recipe.preptimeMinutes,
-            recipe.cooktimeMinutes,
+            recipe.prepTimeMinutes,
+            recipe.cookTimeMinutes,
             recipe.servings,
             recipe.difficulty,
             recipe.cuisine,

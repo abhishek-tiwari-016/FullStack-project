@@ -21,7 +21,6 @@ const Home: React.FC = () => {
   useEffect(() => {
     if(query != ''){
         fetchRecipes(query).then((data) => {
-          setRecipes(data);
           setFilteredRecipes(data);
         });
     }

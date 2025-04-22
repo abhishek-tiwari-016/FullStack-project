@@ -3,8 +3,8 @@ export interface Recipe {
     name: string;
     ingredients: string[];
     instructions: string[];
-    preptimeMinutes: number;
-    cooktimeMinutes: number;
+    prepTimeMinutes: number;
+    cookTimeMinutes: number;
     servings: number;
     difficulty: string;
     cuisine: string;
@@ -16,3 +16,7 @@ export interface Recipe {
     reviewCount: number;
     mealType: string[];
   }
+
+export interface Recipes {
+  recipes: Recipe[];
+}
