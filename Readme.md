@@ -44,6 +44,7 @@ Built with:
 ```bash
 git clone https://github.com/abhishek-tiwari-016/FullStack-project.git
 cd FullStack-project
+npm install
 ```
 
 ### 2. Run both backend and UI using concurrently
